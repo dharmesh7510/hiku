@@ -4,24 +4,39 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mmenu.css">
 	<title>kp</title>
 </head>
 <body>
+
+	<div id="page">
 <!-- section-1 starte -->
 <section class="container banner-5">
 	<div class="row">
+		<div class="mobile-menu">
+				<a href="#menu" title=""><img width="30px" src="images/menu.png" alt=""><img width="30px" src="images/close.png" alt=""></a>
+			</div>
 		<header>
 			<div class="logo">
 				<a href="#" title="logo"><img src="images/logo.png" alt=""></a>
 			</div>
 			<div class="table">
+				<nav id="menu">
+					<ul>
+						<li><a href="#teb1" title="Home">Home</a></li>
+						<li><a href="#tab2" title="About">About</a></li>
+						<li><a href="#tab3" title="Package">Package</a></li>
+						<li><a href="#tab4" title="Gallery">Gallery</a></li>
+						<li><a href="#tab5" title="Contacts">Contacts</a></li>
+					</ul>
+				</nav>
 				<nav>
 					<ul>
-						<li><a href="#" title="Home">Home</a></li>
-						<li><a href="#" title="About">About</a></li>
-						<li><a href="#" title="Package">Package</a></li>
-						<li><a href="#" title="Gallery">Gallery</a></li>
-						<li><a href="#" title="Contacts">Contacts</a></li>
+						<li><a href="#teb1" title="Home">Home</a></li>
+						<li><a href="#tab2" title="About">About</a></li>
+						<li><a href="#tab3" title="Package">Package</a></li>
+						<li><a href="#tab4" title="Gallery">Gallery</a></li>
+						<li><a href="#tab5" title="Contacts">Contacts</a></li>
 					</ul>
 				</nav>
 				<div class="input-1">
@@ -339,6 +354,34 @@ nibh euismod tincidunt ut laoreet dolore </p>
 	    </div>
 </section>
 <!-- section-10 end  -->
+
+
+</div>
+
+
+
+
+
+<script type="text/javascript" src="js/jquery-3.7.1.js"></script>
+<script type="text/javascript" src="js/mmenu.js"></script>
+<script type="text/javascript">
+	
+
+document.addEventListener('DOMContentLoaded', () => {
+
+									new Mmenu("#menu", {		theme 		: "white",
+		navbars		: {
+			content : [ "prev", "title" ]
+		},
+	
+		setSelected	: {
+			hover: true
+		}}, {});
+				
+							});
+
+
+</script>
 
 </body>
 </html>
